@@ -187,21 +187,8 @@ body {
   text-align: center; line-height: 1.5;
 }
 .prof-line {
-  display: none;
-}
-
-/* Fixed bottom-right signature — matches reference site style */
-.site-credit {
-  position: fixed;
-  bottom: 22px; right: 28px;
-  z-index: 200;
-  font-size: 13px; font-weight: 400;
-  color: rgba(255,255,255,0.45);
-  letter-spacing: .3px;
-  pointer-events: none;
-}
-.site-credit .credit-name {
-  font-weight: 700;
+  font-size: 13px; font-weight: 600;
+  letter-spacing: .6px; margin-top: 2rem;
   background: linear-gradient(135deg, #00f5c4, #c850f0, #ff4db8);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   background-clip: text;
