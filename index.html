@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Irregular Verbs Quiz · Simple Past</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BLOCKED OVERLAY -->
+<div id="blockedOverlay" class="blocked-overlay" hidden>
+  <div class="blocked-card">
+    <div class="blocked-icon">!</div>
+    <h2>Session Terminated</h2>
+    <p>You left the quiz page. <strong>Your session has been flagged and terminated.</strong><br><br>
+    You cannot continue this quiz. Contact your professor.</p>
+    <p class="blocked-note">This incident has been recorded.</p>
+  </div>
+</div>
+
+<!-- START GATE -->
+<section id="startGate" class="gate">
+  <div class="gate-inner">
+    <div class="gate-card">
+      <div class="gate-left">
+        <div class="gate-eyebrow">English Grammar · Simple Past</div>
+        <h1 class="gate-title">Irregular<br>Verbs</h1>
+        <p class="gate-subtitle"><em>V2 forms only — A1+</em></p>
+        <div class="gate-chips">
+          <span class="chip">Prof. Roberto Mesén Hidalgo</span>
+          <span class="chip">20 points</span>
+          <span class="chip chip-acc">Tuesday</span>
+        </div>
+        <div class="gate-deco" aria-hidden="true">
+          <span>go → went</span>
+          <span>have → had</span>
+          <span>see → saw</span>
+          <span>buy → bought</span>
+          <span>think → thought</span>
+          <span>come → came</span>
+        </div>
+      </div>
+      <div class="gate-right">
+        <div class="gate-rules">
+          <p class="rules-title">Before you begin</p>
+          <ul>
+            <li>Do <strong>not</strong> switch tabs or leave — your session will be permanently blocked.</li>
+            <li>Section A requires you to <strong>type the exact past form</strong> — spelling counts.</li>
+            <li>The page <strong>cannot be reloaded</strong> after submission.</li>
+            <li>Results are sent directly to your professor.</li>
+          </ul>
+        </div>
+        <label class="gate-label" for="studentName">Your full name *</label>
+        <input type="text" id="studentName" class="gate-input" placeholder="e.g. Maria Fernandez Vargas" autocomplete="off">
+        <button id="startBtn" class="start-btn">Begin Quiz →</button>
+        <p class="gate-note">By clicking Begin you agree not to use dictionaries, translators, or AI tools.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ BODY -->
+<div id="quizBody" hidden>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <span class="topbar-title">Irregular Verbs</span>
+    <span class="topbar-sub">Simple Past · V2</span>
+  </div>
+  <div class="topbar-right">
+    <div class="timer-wrap">
+      <span class="timer-label">Time</span>
+      <span id="timer" class="timer">00:00</span>
+    </div>
+    <div class="prog-wrap">
+      <div class="prog-bar"><span id="progFill"></span></div>
+      <span id="progText" class="prog-text">0 / 20</span>
+    </div>
+  </div>
+</header>
+
+<main class="sheet">
+<form id="quizForm" autocomplete="off">
+
+<!-- SECTION A -->
+<div class="sec-header" id="sectionA">
+  <div class="sec-letter-wrap">
+    <span class="sec-letter">A</span>
+  </div>
+  <div class="sec-info">
+    <h2>Write the Simple Past</h2>
+    <p>Type the correct irregular past form of the verb in parentheses. Spelling counts.</p>
+  </div>
+</div>
+
+<div class="q-grid">
+
+  <article class="q" data-q="1">
+    <span class="q-num">01</span>
+    <div class="q-body">
+      <p class="stem">Yesterday, she <span class="blank-wrap"><input class="blank" name="q1" autocomplete="off" spellcheck="false" placeholder="?"></span> very tired after the long trip. <em class="hint">(be)</em></p>
+    </div>
+  </article>
+
+  <article class="q" data-q="2">
+    <span class="q-num">02</span>
+    <div class="q-body">
+      <p class="stem">He <span class="blank-wrap"><input class="blank" name="q2" autocomplete="off" spellcheck="false" placeholder="?"></span> a great idea during the meeting. <em class="hint">(have)</em></p>
+    </div>
+  </article>
+
+  <article class="q" data-q="3">
+    <span class="q-num">03</span>
+    <div class="q-body">
+      <p class="stem">My parents <span class="blank-wrap"><input class="blank" name="q3" autocomplete="off" spellcheck="false" placeholder="?"></span> to the market early in the morning. <em class="hint">(go)</em></p>
+    </div>
+  </article>
+
+  <article class="q" data-q="4">
+    <span class="q-num">04</span>
+    <div class="q-body">
+      <p class="stem">The children <span class="blank-wrap"><input class="blank" name="q4" autocomplete="off" spellcheck="false" placeholder="?"></span> their homework before dinner. <em class="hint">(do)</em></p>
+    </div>
+  </article>
+
+  <article class="q" data-q="5">
+    <span class="q-num">05</span>
+    <div class="q-body">
+      <p class="stem">She <span class="blank-wrap"><input class="blank" name="q5" autocomplete="off" spellcheck="false" placeholder="?"></span> goodbye and left quickly. <em class="hint">(say)</em></p>
+    </div>
+  </article>
+
+  <article class="q" data-q="6">
+    <span class="q-num">06</span>
+    <div class="q-body">
+      <p class="stem">I <span class="blank-wrap"><input class="blank" name="q6" autocomplete="off" spellcheck="false" placeholder="?"></span> your message this morning. <em class="hint">(get)</em></p>
+    </div>
+  </article>
+
+  <article class="q" data-q="7">
+    <span class="q-num">07</span>
+    <div class="q-body">
+      <p class="stem">He <span class="blank-wrap"><input class="blank" name="q7" autocomplete="off" spellcheck="false" placeholder="?"></span> a sandwich for lunch. <em class="hint">(make)</em></p>
+    </div>
+  </article>
+
+  <article class="q" data-q="8">
+    <span class="q-num">08</span>
+    <div class="q-body">
+      <p class="stem">We <span class="blank-wrap"><input class="blank" name="q8" autocomplete="off" spellcheck="false" placeholder="?"></span> the answer immediately. <em class="hint">(know)</em></p>
+    </div>
+  </article>
+
+</div>
+
+<!-- SECTION B -->
+<div class="sec-header">
+  <div class="sec-letter-wrap">
+    <span class="sec-letter">B</span>
+  </div>
+  <div class="sec-info">
+    <h2>Choose the Correct Past Form</h2>
+    <p>Select the correct simple past form of the verb in bold.</p>
+  </div>
+</div>
+
+<article class="q mc" data-q="9">
+  <div class="q-num-mc">09</div>
+  <div class="q-body-mc">
+    <p class="stem-mc">She <strong>think</strong> → She _____ it was a great idea.</p>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="q9" value="a"><span>A) thinked</span></label>
+      <label class="opt"><input type="radio" name="q9" value="b"><span>B) thought</span></label>
+      <label class="opt"><input type="radio" name="q9" value="c"><span>C) thinks</span></label>
+      <label class="opt"><input type="radio" name="q9" value="d"><span>D) thanked</span></label>
+    </div>
+  </div>
+</article>
+
+<article class="q mc" data-q="10">
+  <div class="q-num-mc">10</div>
+  <div class="q-body-mc">
+    <p class="stem-mc">They <strong>come</strong> → They _____ to the party late.</p>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="q10" value="a"><span>A) comed</span></label>
+      <label class="opt"><input type="radio" name="q10" value="b"><span>B) came</span></label>
+      <label class="opt"><input type="radio" name="q10" value="c"><span>C) comes</span></label>
+      <label class="opt"><input type="radio" name="q10" value="d"><span>D) come</span></label>
+    </div>
+  </div>
+</article>
+
+<article class="q mc" data-q="11">
+  <div class="q-num-mc">11</div>
+  <div class="q-body-mc">
+    <p class="stem-mc">He <strong>see</strong> → He _____ the film last night.</p>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="q11" value="a"><span>A) seen</span></label>
+      <label class="opt"><input type="radio" name="q11" value="b"><span>B) seed</span></label>
+      <label class="opt"><input type="radio" name="q11" value="c"><span>C) saw</span></label>
+      <label class="opt"><input type="radio" name="q11" value="d"><span>D) sawed</span></label>
+    </div>
+  </div>
+</article>
+
+<article class="q mc" data-q="12">
+  <div class="q-num-mc">12</div>
+  <div class="q-body-mc">
+    <p class="stem-mc">She <strong>give</strong> → She _____ me a book for my birthday.</p>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="q12" value="a"><span>A) gived</span></label>
+      <label class="opt"><input type="radio" name="q12" value="b"><span>B) given</span></label>
+      <label class="opt"><input type="radio" name="q12" value="c"><span>C) gave</span></label>
+      <label class="opt"><input type="radio" name="q12" value="d"><span>D) gives</span></label>
+    </div>
+  </div>
+</article>
+
+<article class="q mc" data-q="13">
+  <div class="q-num-mc">13</div>
+  <div class="q-body-mc">
+    <p class="stem-mc">We <strong>find</strong> → We _____ the keys under the table.</p>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="q13" value="a"><span>A) finded</span></label>
+      <label class="opt"><input type="radio" name="q13" value="b"><span>B) fund</span></label>
+      <label class="opt"><input type="radio" name="q13" value="c"><span>C) found</span></label>
+      <label class="opt"><input type="radio" name="q13" value="d"><span>D) founds</span></label>
+    </div>
+  </div>
+</article>
+
+<article class="q mc" data-q="14">
+  <div class="q-num-mc">14</div>
+  <div class="q-body-mc">
+    <p class="stem-mc">He <strong>take</strong> → He _____ the bus to school yesterday.</p>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="q14" value="a"><span>A) taked</span></label>
+      <label class="opt"><input type="radio" name="q14" value="b"><span>B) took</span></label>
+      <label class="opt"><input type="radio" name="q14" value="c"><span>C) taken</span></label>
+      <label class="opt"><input type="radio" name="q14" value="d"><span>D) tooked</span></label>
+    </div>
+  </div>
+</article>
+
+<!-- SECTION C -->
+<div class="sec-header">
+  <div class="sec-letter-wrap">
+    <span class="sec-letter">C</span>
+  </div>
+  <div class="sec-info">
+    <h2>Spot the Error</h2>
+    <p>The underlined verb form is wrong. Choose the correct simple past to replace it.</p>
+  </div>
+</div>
+
+<article class="q mc" data-q="15">
+  <div class="q-num-mc">15</div>
+  <div class="q-body-mc">
+    <p class="stem-mc">My friend <u>telled</u> me a funny story this morning.</p>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="q15" value="a"><span>A) tolded</span></label>
+      <label class="opt"><input type="radio" name="q15" value="b"><span>B) told</span></label>
+      <label class="opt"><input type="radio" name="q15" value="c"><span>C) tells</span></label>
+      <label class="opt"><input type="radio" name="q15" value="d"><span>D) telld</span></label>
+    </div>
+  </div>
+</article>
+
+<article class="q mc" data-q="16">
+  <div class="q-num-mc">16</div>
+  <div class="q-body-mc">
+    <p class="stem-mc">She <u>feeled</u> nervous before the presentation.</p>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="q16" value="a"><span>A) felt</span></label>
+      <label class="opt"><input type="radio" name="q16" value="b"><span>B) felled</span></label>
+      <label class="opt"><input type="radio" name="q16" value="c"><span>C) feel</span></label>
+      <label class="opt"><input type="radio" name="q16" value="d"><span>D) feeled</span></label>
+    </div>
+  </div>
+</article>
+
+<article class="q mc" data-q="17">
+  <div class="q-num-mc">17</div>
+  <div class="q-body-mc">
+    <p class="stem-mc">They <u>buyed</u> a new car last month.</p>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="q17" value="a"><span>A) buied</span></label>
+      <label class="opt"><input type="radio" name="q17" value="b"><span>B) buys</span></label>
+      <label class="opt"><input type="radio" name="q17" value="c"><span>C) bought</span></label>
+      <label class="opt"><input type="radio" name="q17" value="d"><span>D) bringed</span></label>
+    </div>
+  </div>
+</article>
+
+<article class="q mc" data-q="18">
+  <div class="q-num-mc">18</div>
+  <div class="q-body-mc">
+    <p class="stem-mc">He <u>bringed</u> flowers to the party.</p>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="q18" value="a"><span>A) brung</span></label>
+      <label class="opt"><input type="radio" name="q18" value="b"><span>B) brought</span></label>
+      <label class="opt"><input type="radio" name="q18" value="c"><span>C) brings</span></label>
+      <label class="opt"><input type="radio" name="q18" value="d"><span>D) bringed</span></label>
+    </div>
+  </div>
+</article>
+
+<article class="q mc" data-q="19">
+  <div class="q-num-mc">19</div>
+  <div class="q-body-mc">
+    <p class="stem-mc">She <u>leaved</u> the office at six o'clock.</p>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="q19" value="a"><span>A) left</span></label>
+      <label class="opt"><input type="radio" name="q19" value="b"><span>B) leaved</span></label>
+      <label class="opt"><input type="radio" name="q19" value="c"><span>C) leave</span></label>
+      <label class="opt"><input type="radio" name="q19" value="d"><span>D) lefted</span></label>
+    </div>
+  </div>
+</article>
+
+<article class="q mc" data-q="20">
+  <div class="q-num-mc">20</div>
+  <div class="q-body-mc">
+    <p class="stem-mc">I <u>becomed</u> a teacher three years ago.</p>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="q20" value="a"><span>A) becomes</span></label>
+      <label class="opt"><input type="radio" name="q20" value="b"><span>B) became</span></label>
+      <label class="opt"><input type="radio" name="q20" value="c"><span>C) becomed</span></label>
+      <label class="opt"><input type="radio" name="q20" value="d"><span>D) becommed</span></label>
+    </div>
+  </div>
+</article>
+
+<!-- SUBMIT -->
+<div class="submit-row">
+  <p id="unansNote" class="unans-note"></p>
+  <button type="submit" class="submit-btn">Submit Quiz</button>
+</div>
+<div id="saveStatus" class="save-status"></div>
+
+</form>
+</main>
+
+<footer class="foot">Irregular Verbs · Simple Past · Prof. Roberto Mesén Hidalgo · Designed by Rosney</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
