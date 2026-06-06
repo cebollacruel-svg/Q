@@ -187,8 +187,16 @@ body {
   text-align: center; line-height: 1.5;
 }
 .prof-line {
-  font-size: 12px; color: rgba(255,255,255,0.25);
-  letter-spacing: .5px; font-weight: 300;
+  font-size: 13px; font-weight: 600;
+  letter-spacing: .6px;
+  background: linear-gradient(135deg, #00f5c4, #c850f0, #ff4db8);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: profBlink 1.5s ease-in-out infinite;
+}
+@keyframes profBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.45; }
 }
 
 /* ── QUESTION COUNTER ────────────────────────── */
